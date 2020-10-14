@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+     <input>
+        <net-file value="my1LaneMap1.net.xml"/>
+        <route-files value="m1LaneMap1Veh8.rou.xml"/>
+      
+    </input>
+    
+    <output>
+        <battery-output value="Battery.out.xml"/>
+        <battery-output.precision value="4"/>
+        <device.battery.probability value="1"/>
+        <summary-output value="summary_100.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+        <step-length value="0.01"/>
+    </time>
+
+    
+	    
+
+</configuration>

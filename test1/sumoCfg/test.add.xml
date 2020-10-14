@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+  <edgeData id="N1" file="edge_N1.xml" freq="10" />
+  <edgeData id="N1" type="emissions" freq="10" file="edge_N1_FuelEmiss.xml"/>
+</additional>

@@ -1,0 +1,16 @@
+<routes>
+  <vType id="EBUS" accel="2.0" decel="-6" lenght="12" maxSpeed="20.0" sigma="0.0" minGap="2.5" color="1,0,0" 
+         carFollowModel="MYCACC1" tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" lanesCount="2" ccAccel="1.5" ploegKp="0.2" ploegKd="0.7" ploegH="0.5" />
+  <vType id="EBUS2" accel="2.0" decel="-6" lenght="12" maxSpeed="20.0" sigma="0.0" minGap="2.5" color="0,0,1" />
+<route id="platoon_route" edges="N1 W1 S1 E1" />
+  <vehicle type="EBUS" id="00001" depart="0" departPos="1080" route="platoon_route" />
+  <vehicle type="EBUS" id="00002" depart="0" departPos="1060" route="platoon_route" />
+  <vehicle type="EBUS" id="00003" depart="0" departPos="1050" route="platoon_route" />
+  <vehicle type="EBUS" id="00004" depart="0" departPos="1040" route="platoon_route" />
+  <vehicle type="EBUS" id="00005" depart="0" departPos="1030" route="platoon_route" />
+  <vehicle type="EBUS" id="00006" depart="0" departPos="1020" route="platoon_route" />
+  <vehicle type="EBUS" id="00007" depart="0" departPos="1010" route="platoon_route" />
+  <vehicle type="EBUS" id="00008" depart="0" departPos="1010" route="platoon_route" />
+</routes>
+
+

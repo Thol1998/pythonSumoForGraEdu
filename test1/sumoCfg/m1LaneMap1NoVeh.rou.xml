@@ -1,0 +1,8 @@
+<routes>
+  <vType id="car1" accel="2.0" decel="9" lenght="5" maxSpeed="11.0" sigma="1" minGap="1" color="0,1,0" />
+  
+  <route id="r1" edges="N1 W1 S1 E1 N1 W1 S1 E1 N1 W1 S1 E1 N1 W1 S1 E1" />
+  <route id="r2" edges="E1 N1 W1 S1 E1 N1 W1 S1 E1 N1 W1 S1 E1 N1 W1 S1 E1 N1" />
+  <!--<flow begin="0" departPos="random" departLane="1" id="carHuman" vehsPerHour="500" route="r1" type="car1"/>-->
+  <!--be one of ("random", "random_free", "free", "base", "last" or a float)-->
+</routes>
