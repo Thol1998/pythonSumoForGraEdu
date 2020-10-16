@@ -5,7 +5,7 @@
 """
 import os
 import sys
-import traci
+
 
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -13,12 +13,13 @@ if 'SUMO_HOME' in os.environ:
 else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
 
+import traci
 # sys.path.append(os.path.join('c:', os.sep, 'whatever', 'path', 'to', 'sumo', 'tools'))
 print("preparing now \n")
 
 
 path = os.getcwd()
-path2 = path+"\sumoCfg\my1LaneMap1NoVeh-server.sumocfg"
+path2 = path+"\sumoCfg2\my1LaneMap1NoVeh-server.sumocfg"
 sumoBinary = "sumo-gui.exe"
 # sumoBinary = "sumo.exe"
 traci.start([sumoBinary, "-c", path2])
@@ -35,10 +36,10 @@ while requireStop == 0:
     # for len(vehicles)>0:
     #    traci.vehicle.setParameter("00001", "carFollowModel.SimpleCACC1", "Hi")
 
-    print("running "+str(curTime)+"\n")
+    print("running "+str(curTime))
 
-   # 每隔20秒加入1车，步长0.01
-    if stepNum % 2000 == 1:
+   # 每隔5秒加入1车，步长0.01
+    if stepNum % 500 == 1:
         vehSpeed = 0
         vehPos = 10
         vehLane = 0
@@ -51,5 +52,6 @@ while requireStop == 0:
 
     if timeT > 60:  # if time is over 200 second stoping the simulation
         requireStop = 1
+    
 
 traci.close()

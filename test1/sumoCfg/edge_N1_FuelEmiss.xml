@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 10/14/20 17:32:34 by Eclipse SUMO GUI Version 1.3.1
+<!-- generated on 2020/10/17 ÐÇÆÚÁù 0:29:01 by Eclipse SUMO GUI Version v1_5_0+0037-b61e5b18a7
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="E:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\my2LaneMap1.net.xml"/>
-        <route-files value="E:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\m1LaneMap1NoVeh.rou.xml"/>
-        <additional-files value="E:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\test.add.xml"/>
+        <net-file value="D:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\my2LaneMap1.net.xml"/>
+        <route-files value="D:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\m1LaneMap1NoVeh.rou.xml"/>
+        <additional-files value="D:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\test.add.xml"/>
     </input>
 
     <output>
-        <summary-output value="E:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\summary.xml"/>
+        <summary-output value="D:\GITHUB\pythonSumoForGraEdu\test1\sumoCfg\summary.xml"/>
     </output>
 
     <time>
@@ -20,7 +20,7 @@
     </time>
 
     <traci_server>
-        <remote-port value="52825"/>
+        <remote-port value="51813"/>
     </traci_server>
 
     <gui_only>
@@ -31,15 +31,4 @@
 -->
 
 <meandata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/meandata_file.xsd">
-    <interval begin="0.00" end="3.93" id="N1">
-        <edge id="E1" sampledSeconds="0.00" CO_abs="0" CO2_abs="0" HC_abs="0" PMx_abs="0" NOx_abs="0" fuel_abs="0" electricity_abs="0"
-            CO_normed="0" CO2_normed="0" HC_normed="0" PMx_normed="0" NOx_normed="0" fuel_normed="0" electricity_normed="0"/>
-        <edge id="N1" sampledSeconds="3.92" CO_abs="517.991662" CO2_abs="11914.145629" HC_abs="2.634978" PMx_abs="0.250428" NOx_abs="5.217768" fuel_abs="5.121598" electricity_abs="0"
-            CO_normed="197.706741" CO2_normed="4547.383828" HC_normed="1.005717" PMx_normed="0.095583" NOx_normed="1.991514" fuel_normed="1.954808" electricity_normed="0"
-            traveltime="954.58" CO_perVeh="126139.013506" CO2_perVeh="2901279.473098" HC_perVeh="641.658119" PMx_perVeh="60.983121" NOx_perVeh="1270.607474" fuel_perVeh="1247.188594" electricity_perVeh="0"/>
-        <edge id="S1" sampledSeconds="0.00" CO_abs="0" CO2_abs="0" HC_abs="0" PMx_abs="0" NOx_abs="0" fuel_abs="0" electricity_abs="0"
-            CO_normed="0" CO2_normed="0" HC_normed="0" PMx_normed="0" NOx_normed="0" fuel_normed="0" electricity_normed="0"/>
-        <edge id="W1" sampledSeconds="0.00" CO_abs="0" CO2_abs="0" HC_abs="0" PMx_abs="0" NOx_abs="0" fuel_abs="0" electricity_abs="0"
-            CO_normed="0" CO2_normed="0" HC_normed="0" PMx_normed="0" NOx_normed="0" fuel_normed="0" electricity_normed="0"/>
-    </interval>
 </meandata>

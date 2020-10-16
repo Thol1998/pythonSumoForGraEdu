@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 10/16/20 23:33:35 by Eclipse SUMO netedit Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="D:\map1\test3.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="D:\map1\test1.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,10.00,0.00,184.78" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="e1" from="n1" to="n2" priority="-1" spreadType="center">
+        <lane id="e1_0" index="0" speed="11.00" length="90.00" shape="1.60,10.00 1.60,100.00"/>
+        <lane id="e1_1" index="1" speed="11.00" length="90.00" shape="-1.60,10.00 -1.60,100.00"/>
+    </edge>
+    <edge id="e2" from="n2" to="n3" priority="-1" spreadType="center">
+        <lane id="e2_0" index="0" speed="13.89" length="84.78" shape="1.60,100.00 1.60,184.78"/>
+        <lane id="e2_1" index="1" speed="13.89" length="84.78" shape="-1.60,100.00 -1.60,184.78"/>
+    </edge>
+
+    <tlLogic id="n2" type="static" programID="0" offset="0">
+        <phase duration="15" state="GG"/>
+        <phase duration="3"  state="yy"/>
+        <phase duration="5"  state="rr"/>
+    </tlLogic>
+
+    <junction id="n1" type="dead_end" x="0.00" y="10.00" incLanes="" intLanes="" shape="-3.20,10.00 3.20,10.00"/>
+    <junction id="n2" type="traffic_light" x="0.00" y="100.00" incLanes="e1_0 e1_1" intLanes="" shape="-3.20,100.00 3.20,100.00 -3.20,100.00">
+        <request index="0" response="00" foes="00"/>
+        <request index="1" response="00" foes="00"/>
+    </junction>
+    <junction id="n3" type="dead_end" x="0.00" y="184.78" incLanes="e2_0 e2_1" intLanes="" shape="3.20,184.78 -3.20,184.78"/>
+
+    <connection from="e1" to="e2" fromLane="0" toLane="0" tl="n2" linkIndex="0" dir="s" state="O"/>
+    <connection from="e1" to="e2" fromLane="1" toLane="1" tl="n2" linkIndex="1" dir="s" state="O"/>
+
+</net>
